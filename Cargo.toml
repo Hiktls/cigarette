@@ -1,0 +1,20 @@
+[package]
+name = "cocktopus"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winreg = "0.10.1"
+reqwest = { version = "0.11.9", features = ["blocking", "json"] }
+scrap = "0.5"
+repng = "0.2.2"
+device_query = "0.2.8"
+tokio = { version = "1.17", features = ["macros"] }
+windows = {version = "0.33.0",features = [
+    "alloc",
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+]}
+ftp = { version = "3.0.1"}
